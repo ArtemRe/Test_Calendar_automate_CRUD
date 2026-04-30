@@ -1,0 +1,22 @@
+{
+  "name": "playwright-calendar-test",
+  "version": "1.0.0",
+  "description": "CRUD test for Google Calendar with Playwright",
+  "scripts": {
+    "test": "npx playwright test --project=chromium",
+    "test:headed": "npx playwright test --project=chromium --headed",
+    "test:debug": "npx playwright test --project=chromium --debug",
+    "test:ui": "npx playwright test --project=chromium --ui",
+    "auth": "npx playwright test setup/auth.setup.ts --project=setup --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "typescript": "^5.0.0"
+  }
+}
