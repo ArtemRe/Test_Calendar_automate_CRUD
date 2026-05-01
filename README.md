@@ -8,8 +8,8 @@
    * Запустіть команду: `npm run auth`
    * У вікні, що відкриється, пройдіть авторизацію вручну.
    * Зачекайте **90 секунд**, поки статус авторизації збережеться і тест закриється.
-   * **Логін:** `testtestaccaunt4@gmail.com`
-   * **Пароль:** `123456789A!`
+   * **Логін:** `*******`
+   * **Пароль:** `*********`
 
 3. **Запуск головного тесту:**
    * Виконайте: `npm run test:headed`
@@ -24,8 +24,8 @@
    * Run the command: `npm run auth`
    * Manually log in using the credentials below in the opened browser window.
    * **Wait for 90 seconds** to ensure the authorization status is correctly saved before the window closes.
-   * **Login:** `testtestaccaunt4@gmail.com`
-   * **Password:** `123456789A!`
+   * **Login:** `**********`
+   * **Password:** `********`
 
 3. **Run Tests:**
    * To execute the main test in headed mode, use: `npm run test:headed`
