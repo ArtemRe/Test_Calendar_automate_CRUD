@@ -13,3 +13,19 @@
 
 3. **Запуск головного тесту:**
    * Виконайте: `npm run test:headed`
+
+## Setup and Execution Guide
+
+1. **Clone the repository and install dependencies:**
+   * `npm install` — installs all necessary libraries.
+   * `npx playwright install` — downloads and installs required browsers for testing.
+
+2. **Authorization Process:**
+   * Run the command: `npm run auth`
+   * Manually log in using the credentials below in the opened browser window.
+   * **Wait for 90 seconds** to ensure the authorization status is correctly saved before the window closes.
+   * **Login:** `testtestaccaunt4@gmail.com`
+   * **Password:** `123456789A!`
+
+3. **Run Tests:**
+   * To execute the main test in headed mode, use: `npm run test:headed`
