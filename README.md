@@ -1,8 +1,15 @@
-Сlone this repository
-npm install (to install dependencies)
-npx playwright install (to install playwright)
-npm run auth 
-In the window that opens, manually authorize and wait 90 seconds until the authorization status is saved and the test closes
-enter login (testtestaccaunt4@gmail.com) manual
-enter password (123456789A!) manual
-npm run test:headed (to pass the main test)
+## Як запустити проект локально
+
+1. **Клонуйте репозиторій та встановіть залежності:**
+   * `npm install` — встановлення всіх бібліотек.
+   * `npx playwright install` — встановлення браузерів для тестів.
+
+2. **Авторизація:**
+   * Запустіть команду: `npm run auth`
+   * У вікні, що відкриється, пройдіть авторизацію вручну.
+   * Зачекайте **90 секунд**, поки статус авторизації збережеться і тест закриється.
+   * **Логін:** `testtestaccaunt4@gmail.com`
+   * **Пароль:** `123456789A!`
+
+3. **Запуск головного тесту:**
+   * Виконайте: `npm run test:headed`
