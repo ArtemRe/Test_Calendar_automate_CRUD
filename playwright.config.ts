@@ -19,14 +19,14 @@ export default defineConfig({
       testDir: './setup',
       use: {
         ...devices['Desktop Chrome'],
-        channel: 'chrome', // Використовуємо ваш встановлений Chrome, щоб Google не блокував вхід
+        channel: 'chrome',
       }
     },
     {
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        storageState: '.auth/user.json', // Тут ми будемо зберігати сесію
+        storageState: '.auth/user.json',
       },
     },
   ],
