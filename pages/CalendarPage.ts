@@ -24,24 +24,18 @@ export class CalendarPage {
 
   }
 
-  // C - Create
   async createEvent(title: string) {
     await this.createButton.click();
 
     const eventMenuItem = this.page.locator('div[role="menuitem"]:visible, li[role="menuitem"]:visible').filter({ hasText: /Подія|Event/i }).first();
-    try {
-      await eventMenuItem.click({ timeout: 2000 });
-    } catch (e) {
 
-    }
-
+    await eventMenuItem.click({ timeout: 2000 });
     await this.titleInput.waitFor({ state: 'visible' });
     await this.titleInput.fill(title);
     await this.saveButton.click();
     await this.titleInput.waitFor({ state: 'hidden' });
     await this.page.waitForTimeout(1000);
   }
-
 
   async verifyEventExists(title: string) {
     const eventLocator = this.page.locator('div[role="button"]').filter({ hasText: title }).first();
@@ -55,12 +49,9 @@ export class CalendarPage {
     await eventLocator.click();
     await this.editButton.waitFor({ state: 'visible' });
     await this.editButton.click();
-
     await this.titleInput.waitFor({ state: 'visible' });
     await this.titleInput.clear();
     await this.titleInput.fill(newTitle);
-
-
     await this.saveButton.click();
     await this.titleInput.waitFor({ state: 'hidden' });
     await this.page.waitForTimeout(1000);
