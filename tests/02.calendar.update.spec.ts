@@ -25,7 +25,7 @@ test.describe('Google Calendar - Update Event', () => {
       await calendarPage.verifyEventExists(updatedEventTitle);
     });
 
-    // Cleanup to keep the calendar clean
+
     await test.step('Cleanup: Delete the updated event', async () => {
       await calendarPage.deleteEvent(updatedEventTitle);
     });

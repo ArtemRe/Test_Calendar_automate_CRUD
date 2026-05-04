@@ -20,7 +20,7 @@ test.describe('Google Calendar - Create Event', () => {
       await calendarPage.verifyEventExists(eventTitle);
     });
 
-    // Cleanup to keep the calendar clean
+
     await test.step('Cleanup: Delete the created event', async () => {
       await calendarPage.deleteEvent(eventTitle);
     });
